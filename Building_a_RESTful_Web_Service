@@ -1,0 +1,59 @@
+/**
+  아래의 코드를 보고 말로 설명해 보시오
+  추가 질문에 대해 찾아보고 정리하시오
+  추가질문(Drill-down) :
+    - AtomicLong 사용이유 -> #link 
+      (Thread -> Java thread -> platform thread) -> #link
+
+    - Annotation 만들어보기 ->  #link
+
+    - Annotation Series-> @GetMapping, @RequestParam, @RestController -> spring official docs 기반으로 정리 (다른 예제에도 있으므로 Annotaion은 한 파일에 몰아넣기)-> #link
+
+    - RestFul overview & url mapping - > #link
+
+    ->대학 과제에 있었는데? httpd를 이용했던거 같음
+    - json serialization / unserialization -> WAS 만들기 -> #link
+    - xml serialization / unserialization -> WAS 만들기 -> #link
+      
+  ref : Sprng.io/guides
+
+  1. Building a RESTful Web Service
+**/
+
+// Create a Resource Representation Class
+// We need json object like this below
+
+  {
+    "id" : 1,
+    "content" : "Hello, World!"
+  }
+
+// in locantin - src/main/java/com/example/restservice/Greeting.java
+
+######## Greeting.java ########
+pacakage com.example.restservice;
+
+public record Greeting(long id, String content {}
+
+
+// Creating a Resource Controller
+
+######## GreetingController.java ########
+package.com.example.restservice;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframe.web.bind.annotation.GetMapping;
+import org.springframe.web.bind.annotation.RequestParam;
+import org.springframe.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingController {
+  private static final String template = "Hello, %s";
+  private final AtomicLong counter = new AtomicLong();
+
+  @GetMapping("/greeting")
+  public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") string name){
+    return new Greeting(counter.incrementAndGet(), String.format(template, name));
+  }
+}

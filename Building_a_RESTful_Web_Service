@@ -2,16 +2,20 @@
   아래의 코드를 보고 말로 설명해 보시오
   추가 질문에 대해 찾아보고 정리하시오
   추가질문(Drill-down) :
-    - AtomicLong 사용이유 -> #link 
-      (Thread -> Java thread -> platform thread) -> #link
+    - AtomicLong 사용이유 -> #https://github.com/coralstay3595/spring_guide/blob/main/Why_AtomicLong
+
+    - (Thread -> Java thread -> platform thread) -> #https://github.com/coralstay3595/spring_guide/blob/main/Annotation_Series_Spring_Official_Guide
 
     - Annotation 만들어보기 ->  #link
 
     - Annotation Series-> @GetMapping, @RequestParam, @RestController -> spring official docs 기반으로 정리 (다른 예제에도 있으므로 Annotaion은 한 파일에 몰아넣기)-> #link
 
-    - RestFul overview & url mapping - > #link
+    - RestFul overview & url mapping - > #https://github.com/coralstay3595/spring_guide/blob/main/Restful_Overview_And_URL_Mapping
 
-    ->대학 과제에 있었는데? httpd를 이용했던거 같음
+    -> 대학 과제에 있었는데? httpd를 이용했던거 같음 
+    -> #https://github.com/coralstay3595/spring_guide/blob/main/Make_own_WAS_using_HTTPD
+    -> using c or c++
+
     - json serialization / unserialization -> WAS 만들기 -> #link
     - xml serialization / unserialization -> WAS 만들기 -> #link
       

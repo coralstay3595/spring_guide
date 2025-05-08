@@ -6,7 +6,7 @@
 
     - (Thread -> Java thread -> platform thread) -> #https://github.com/coralstay3595/spring_guide/blob/main/Annotation_Series_Spring_Official_Guide
 
-    - Annotation 만들어보기 ->  #link
+    - Annotation 만들어보기 ->  #https://github.com/coralstay3595/spring_guide/tree/main
 
     - Annotation Series-> @GetMapping, @RequestParam, @RestController -> spring official docs 기반으로 정리 (다른 예제에도 있으므로 Annotaion은 한 파일에 몰아넣기)-> #link
 

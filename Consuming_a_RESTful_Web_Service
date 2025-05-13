@@ -1,0 +1,24 @@
+/**
+
+Consuming a RESTful Web Service
+https://spring.io/guides/gs/consuming-rest#initial
+
+Steps
+1. code 내려받기 
+2. gradle로 서버 키기
+3. 소스 코드 설명(Spring guide) 요약
+4. 필요하다고 생각되는 몇가지 팁 정리
+5. 추가 학습냐용
+**/
+
+
+/**
+1. code 내려받기
+git clone https://github.com/spring-guides/gs-consuming-rest.git
+cd gs-consuming-rest/initial
+
+cd ./gradlew build
+cd ./gradlew bootRun
+**/
+
+
